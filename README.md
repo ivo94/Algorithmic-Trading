@@ -1,0 +1,5 @@
+1) market-making: This strategy involves attempting to buy a cryptocurrency at the best available bid price and then immediately selling it to capture the spread. If the buy order is not filled and the best bid price changes, the system cancels the original order and places a new one. The goal is to execute as many trades as possible in a cryptocurrency pair with no fees (e.g., BTC/FDUSD).
+
+2) predictor: This script uses Facebook’s Prophet to forecast cryptocurrency pair prices. The model is fine-tuned to maximize accuracy (measured by the number of correct predictions of price increases/decreases) and coverage (the frequency with which the actual price falls within the predicted interval).
+
+3) new_symbol: Designed for cryptocurrency pairs that have not yet been listed, this script capitalizes on the initial price spike often seen during the first seconds of trading. It uses automated orders to scan for newly listed symbols and instantly buys at a low price upon listing to profit from the volatility.
